@@ -64,26 +64,24 @@ public class AutonomousCommand extends Command {
 	    Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);
 	    }
 	    
-	    else if(timer.get()<=6){
+	    else if(timer.get()<=7){
 	    Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
 	    }
 	
-	else if(timer.get()<=9){
+	else if(timer.get()<=10){
 	  Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);
 	
 	}
-    	else if(timer.get()<=10){
+    	else if(timer.get()<15){
 		Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
     	
 	} 
-    	else if (timer.get()<=14){
-	Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6.0);
-	
-	}
-        else if (timer.get()=15){
+    	else if (timer.get()=15){
 	Robot.driveTrain.differentialDrive1.arcadeDrive(0.0);
 	
-	} 
+	}
+       
+	
     	
     
     }  //end v. execute
