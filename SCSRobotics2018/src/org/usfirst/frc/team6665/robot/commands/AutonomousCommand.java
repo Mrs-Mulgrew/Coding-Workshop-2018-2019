@@ -61,25 +61,25 @@ public class AutonomousCommand extends Command {
            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
         }
-	   else if(timer.get()<= 5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
+	   else if(timer.get()<= 4.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn right?
 				     
         }
 	   else if(timer.get()<= 7) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
 	}
-	   else if(timer.get()<= 9) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
+	   else if(timer.get()<= 8.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
         						// (speed/output from motor,rotation angle)
         }
-	   else if(timer.get()<= 12) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
+	   else if(timer.get()<= 11) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
         }
-	   else if(timer.get()<= 14) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
+	   else if(timer.get()<= 12.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
         						// (speed/output from motor,rotation angle)
         }
-	   else if(timer.get()<= 16) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
+	   else if(timer.get()<= 15) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
         }
-	   else if(timer.get()<= 18) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
+	   else if(timer.get()<= 16.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
         						// (speed/output from motor,rotation angle)
         }
 	    else {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);//stop
