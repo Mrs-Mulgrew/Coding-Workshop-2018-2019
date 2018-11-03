@@ -60,7 +60,11 @@ public class AutonomousCommand extends Command {
         
            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
-        } 
+        }else if(timer.get()<=7){
+	   Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.2);//turn right??? 
+	}else {
+		Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);//STOP
+	}
     	
     
     }  //end v. execute
