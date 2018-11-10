@@ -55,36 +55,45 @@ public class AutonomousCommand extends Command {
     @Override
     protected void execute() {
     	
-    	if(timer.get()<= 3) {
-    	   System.err.println("autoEx ran");
+    	//if(timer.get()<= 3) {
+    	   //System.err.println("autoEx ran");
         
-           Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
+           //Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
-        }
-	   else if(timer.get()<= 4.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn right?
+        //}
+	   //else if(timer.get()<= 4.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn right?
 				     
-        }
-	   else if(timer.get()<= 7) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
+        //}
+	   //else if(timer.get()<= 7) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
-	}
-	   else if(timer.get()<= 8.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
+	//}
+	   //else if(timer.get()<= 8.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
         						// (speed/output from motor,rotation angle)
-        }
-	   else if(timer.get()<= 11) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
+        //}
+	   //else if(timer.get()<= 11) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
-        }
-	   else if(timer.get()<= 12.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
+        //}
+	   //else if(timer.get()<= 12.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
         						// (speed/output from motor,rotation angle)
-        }
-	   else if(timer.get()<= 15) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
+        //}
+	   //else if(timer.get()<= 15) {Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
         						// (speed/output from motor,rotation angle)
-        }
-	   else if(timer.get()<= 16.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
+        //}
+	   //else if(timer.get()<= 16.5) {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.45);//turn right?
         						// (speed/output from motor,rotation angle)
-        }
-	    else {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);//stop
-		 }
-		
+        //}
+	    //else {Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);//stop
+		 //}
+	
+	for(int counter=0; counter<3; counter++){
+		int timeStart=time.get();
+			if(time.get()<timeStart+2){
+				Robot.driveTrain.differentialDrive1.arcadeDrive(-0.5,0);
+			}else if(time.get()<timeStart+3.5){
+				Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);
+			}
+	}  //end forloop
+	
     }  //end v. execute
      
 
